@@ -95,7 +95,7 @@ export default function EventForm() {
                 placeholder="Tech Conference 2023"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                className="w-full px-4 py-3 border border-gray-300  text-black rounded-lg"
                 required
               />
             </div>
@@ -111,7 +111,7 @@ export default function EventForm() {
                 value={formData.description}
                 onChange={handleChange}
                 rows={4}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                className="w-full px-4 py-3 border  text-black border-gray-300 rounded-lg"
                 required
               />
             </div>
@@ -125,7 +125,7 @@ export default function EventForm() {
                   name="startDate"
                   value={formData.startDate}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                  className="w-full px-4 py-3 border border-gray-300 text-black rounded-lg"
                   required
                 />
               </div>
@@ -136,7 +136,7 @@ export default function EventForm() {
                   name="startTime"
                   value={formData.startTime}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                  className="w-full px-4 py-3 border border-gray-300   text-black rounded-lg"
                   required
                 />
               </div>
@@ -147,7 +147,7 @@ export default function EventForm() {
                   name="endDate"
                   value={formData.endDate}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                  className="w-full px-4 py-3 border border-gray-300  text-black rounded-lg"
                   required
                 />
               </div>
@@ -158,7 +158,7 @@ export default function EventForm() {
                   name="endTime"
                   value={formData.endTime}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                  className="w-full px-4 py-3 border border-gray-300  text-black rounded-lg"
                   required
                 />
               </div>
@@ -175,7 +175,7 @@ export default function EventForm() {
                   step="0.000001"
                   value={formData.latitude}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                  className="w-full px-4 py-3 border border-gray-300  text-black rounded-lg"
                   required
                 />
               </div>
@@ -188,7 +188,7 @@ export default function EventForm() {
                   step="0.000001"
                   value={formData.longitude}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                  className="w-full px-4 py-3 border border-gray-300  text-black rounded-lg"
                   required
                 />
               </div>
