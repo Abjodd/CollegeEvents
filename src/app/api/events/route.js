@@ -33,6 +33,9 @@ export async function POST(req) {
     const endDate = formData.get("endDate");
     const endTime = formData.get("endTime");
     const expiresAt = new Date(`${endDate}T${endTime}:00`);
+    if (isNaN(expiresAt.getTime())) {
+      return NextResponse.json({ error: "Invalid date format for expiresAt" }, { status: 400 });
+    }
 
     const newEvent = new Event({
       name: formData.get("name"),
