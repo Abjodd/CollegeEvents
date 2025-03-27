@@ -74,7 +74,7 @@ export default function Sidebar() {
       </button>
 
       {/* Sidebar */}
-      <aside className={`w-64 bg-gradient-to-b from-gray-50 to-gray-100 border-r border-gray-200 shadow-lg rounded-r-lg overflow-y-auto scrollbar-thin scrollbar-thumb-yellow-400 scrollbar-track-gray-200 h-screen transition-transform duration-200 ease-in-out z-[1000] fixed top-0 left-0 ${
+      <aside className={`w-64 bg-gradient-to-b from-gray-50 to-gray-100 border-r border-gray-200 shadow-lg rounded-r-lg overflow-y-auto scrollbar-thin scrollbar-thumb-yellow-400 scrollbar-track-gray-200 h-screen transition-transform duration-200 ease-in-out z-[100] fixed top-0 left-0 ${
           isMobile
             ? `fixed z-40 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`
             : `static ${isSidebarOpen ? 'block' : 'hidden'}`
