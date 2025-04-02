@@ -76,7 +76,7 @@ const CollegeMap = () => {
 
               {/* 📍 College Location */}
               <Marker position={collegeCenter} icon={customIcon}>
-                <Popup>Dayananda Sagar College of Engineering</Popup>
+                <Popup>Dayananda Sagar Coll of Engineering</Popup>
               </Marker>
 
               {/* 🔹 Department Markers */}
