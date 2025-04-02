@@ -57,7 +57,7 @@ const CollegeMap = () => {
       <Navbar />
       <div className="flex flex-1">
         <Sidebar />
-        <main className="flex-1 p-4">
+        <main className="flex-1 p-4 z-[10]">
           {isClient && customIcon && ( // ✅ Render only when client & icon is set
             <MapContainer
               center={collegeCenter}
