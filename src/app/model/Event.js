@@ -13,13 +13,10 @@ const EventSchema = new mongoose.Schema({
   endDate: { type: String, required: true },
   endTime: { type: String, required: true },
   createdAt: { type: Date, default: Date.now },
-
-  // 🟢 Expiry Field
   expiresAt: { type: Date, required: true },
 });
 
 
-// ✅ Ensure TTL Index is Created
-EventSchema.index({ expiresAt: 1 }, { expireAfterSeconds: 60 });
+// EventSchema.index({ expiresAt: 1 }, { expireAfterSeconds: 60 });
 
 export default mongoose.models.Event || mongoose.model("Event", EventSchema);
